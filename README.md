@@ -1,1 +1,26 @@
 # app-course-list
+
+Tracker de liste de courses.
+Tracker de prix de produits.
+
+=================
+
+As a user I can: 
+ * create a new list
+ * add an item to a list
+ * delete a list item
+ * see all listes
+ * see a list content
+ * tick a product
+ * clear all ticks in a list
+ * delete a list
+ * Ajouter une liset aux favoris(recurents)
+
+================
+
+var recurent_lists = {
+	long_term=[],
+	consommables=[],
+	food=[]
+}
+
