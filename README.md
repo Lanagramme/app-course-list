@@ -6,15 +6,15 @@ Tracker de prix de produits.
 =================
 
 As a user I can: 
- * create a new list
- * add an item to a list
- * delete a list item
- * see all listes
- * see a list content
- * tick a product
- * clear all ticks in a list
- * delete a list
- * Ajouter une liset aux favoris(recurents)
+	- [x] create a new list
+	- [x] add an item to a list
+	- [ ] delete a list item
+	- [ ] see all listes
+	- [ ] see a list content
+	- [x] tick a product
+	- [x] clear all ticks in a list
+	- [ ] delete a list
+	- [ ] Ajouter une liset aux favoris(recurents)
 
 ================
 
