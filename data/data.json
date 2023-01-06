@@ -1,6 +1,1 @@
-[ {
-	"all":["test"],
-	"bin":[],
-	"recurent":[],
-	"ponctual":[]
-} ]
+[{"all":["test",{"id":1672995770637,"items":[{"id":1672997354356,"status":0,"name":"test"}],"name":"new_list","type":"all"},{"id":1672996530799,"items":[],"name":"new_list","type":"all"},{"id":1672996566477,"items":[],"name":"new_list","type":"all"},{"id":1672996603314,"items":[],"name":"new_list","type":"all"},{"id":1672996636860,"items":[],"name":"new_list","type":"all"}],"bin":[],"recurent":[],"ponctual":[]}]

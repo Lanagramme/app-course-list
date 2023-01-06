@@ -1,8 +1,15 @@
 const 
-	db = require("../data/data.json")[0]
+	db   = require("../data/data.json")[0],
+	File = require("./file.js")
 	console.log(db)
 
 	Liste = {
+		async save() {
+			return new Promise ((resolve, reject) => {
+				File.writeData([db], "data.json")
+					.then(x => { resolve( x )	})
+			})
+		},
 		get_all() {
 			return db.all
 		},
@@ -11,11 +18,14 @@ const
 				id: Date.now(),
 				items : [],
 				name,
-				type: "all",
+				type: type ? type : "all",
 			}
 
+			console.log(db)
 			db.all.push(new_liste)
-			db[type].push(new_liste.id)
+			if (new_liste.type != "all")
+				db[new_liste.type].push(new_liste.id)
+			return db.all.find(x => {x == new_liste})
 		},
 		remove(listId){
 			const trash = Liste.get_by_id(listId)
@@ -25,13 +35,17 @@ const
 		},
 
 		add_item(listId, name) { 
+
 			new_item = {
 				id: Date.now(),
 				status: 0,
 				name,
 			}
+			list = Liste.get_by_id(listId)
+			if (!list) {return {success: false, message: "Aucune liste avec cet id"}}
+			list.items.push(new_item)
+			return {success: true}
 
-			db[listId].items.push(new_item) 
 		},
 		remove_item(listId, itemId) { db[listId].items = db[listId].items.filter(x => x.id != itemId) },
 
