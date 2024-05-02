@@ -1,7 +1,7 @@
 # app-course-list
 
-Tracker de liste de courses.
-Tracker de prix de produits.
+ * Tracker de liste de courses.
+ * Tracker de prix de produits.
 
 =================
 
