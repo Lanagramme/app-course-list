@@ -3,7 +3,7 @@
  * Tracker de liste de courses.
  * Tracker de prix de produits.
 
-=================
+___
 
 As a user I can: 
  - [x] create a new list
@@ -16,7 +16,7 @@ As a user I can:
  - [ ] delete a list
  - [ ] Ajouter une liset aux favoris(recurents)
 
-================
+___
 
 var recurent_lists = {
 	long_term=[],
