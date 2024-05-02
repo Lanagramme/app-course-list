@@ -21,9 +21,9 @@ ___
 ``` Javascript
 
 var recurent_lists = {
- long_term=[],
- consommables=[],
- food=[]
+    long_term=[],
+    consommables=[],
+    food=[]
 }
 
 ```
